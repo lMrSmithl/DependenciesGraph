@@ -16,7 +16,7 @@ def createGraph(path="./"):
     
 
 
-def drawGraph(graph):
+def draw(graph):
     nx.draw(graph, with_labels=True, font_weight='bold')
     plt.show()
 
@@ -33,4 +33,4 @@ def extract_filename(file):
     return file.split(".")[0]  #cut extension .py
 
 g=createGraph()
-drawGraph(g)
+draw(g)
